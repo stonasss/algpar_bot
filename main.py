@@ -41,7 +41,7 @@ async def on_guild_channel_create(channel:discord.abc.GuildChannel):
 @bot.event
 async def on_member_join(member:discord.Member):
     channel = bot.get_channel(1309221885728522270)
-    my_embed = discord.Embed(title=f'Bem-vindo, {member.display_name}!', description='Feliz de te ver por aqui.')
+    my_embed = discord.Embed(title=f'Bem-vindo, {member.display_name}!', description='Feliz de te ver por aqui, amigo.')
 
     my_embed.set_thumbnail(url=member.avatar)
     
