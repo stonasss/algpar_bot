@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+BOT_KEY = os.getenv('DISCORD_TOKEN')
+
 import discord
 from discord.ext import commands
 permissions = discord.Intents.default()
@@ -49,4 +54,4 @@ async def on_member_join(member:discord.Member):
 async def on_ready():
     print("Estou online!")
     
-bot.run("MTMwOTIwOTk3ODU4NTg3ODU5OQ.G_XNOk.ULZMYZJWF2MQQKCAW8l7FK81fX2hG1_OPgSSwI")
+bot.run(BOT_KEY)
